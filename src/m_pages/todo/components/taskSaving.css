@@ -1,0 +1,102 @@
+:root{
+    --color_white: #f8f8f8;
+    --color_black: #333333;
+    --color_gray:  #ddd;  
+    --color_darck_blue: #0c223a;  
+    --color_darck_blue_opacity: #0c223aa7;  
+    --color_light_blue:#057aa2;
+    --color_green: #0f9b72;
+    --color_light_green: #7acaac;
+    --color_yellow : #fff333;
+    --color_red: #eb1717ee;
+    --background: linear-gradient(to right , #7acaac , #057aa2) ;
+
+    --withSubCont: 85%;
+}
+
+.task-btns:hover{
+    opacity: 0.6;
+}
+
+/*-------------------------------------*/
+
+.taskSaving-conteiner{
+    display: flex; 
+    min-height: 50rem;
+    width: 100%;
+    background: var(--background) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+    .taskSaving-row {
+        align-self: center; justify-self: center;
+        display: flex; flex-flow: row wrap; 
+        justify-content: flex-start; 
+        /* align-items: center;  */
+        align-content: baseline;
+
+        min-height: 35rem;
+        width: 85%; 
+        padding: 5px;
+        border: solid 2px var(--color_gray); border-radius: 5px;
+        margin: 4rem auto 0px auto;
+    }
+    
+        .taskSaving {
+            position: relative;
+            box-sizing: border-box!important; 
+            display: flex; justify-content: center; align-items: center; 
+
+            height: 11rem; width: 12rem; padding: 1rem 2rem; 
+            border-radius: 4px; margin: 0.5rem;
+
+            cursor: pointer;
+            background-color: var(--color_gray); color: var(--color_black); 
+            
+        }
+        .taskSaving:active{ 
+            opacity: 0.7; 
+            /* height: 8rem;   */
+            /* margin: 1rem 0.5rem; */
+            transform: scale( 0.9 ) ;
+            
+        }
+            .taskSaving-title { 
+                /* border: #0c223a 1px solid; */
+                /* height: 100%; width: 100%; */
+                margin: 0%;
+                line-height: 2rem;
+                font-size: 16px;
+                
+            }
+            .taskSaving-btn-delete{
+                display: block;
+                position: absolute; 
+                top:0% ; 
+                right: 0%;
+
+                visibility: hidden;
+                height: 2rem; width: 2rem; border: none; border-radius: 10px;
+                border-bottom: 2px solid var(--color_white); border-left: 2px solid var(--color_white);  
+                
+                background: none;   
+                color: var(--color_darck_blue);
+                font-size: 2rem;
+                transition: all 0.2s;
+
+                text-align: center;
+                line-height: 50%; 
+            }
+            .taskSaving:hover .taskSaving-btn-delete{
+                visibility: inherit; 
+                
+            }
+            .taskSaving-btn-delete:hover{
+                height: 2.5rem; width: 2.5rem;
+                background-color: var(--color_light_green);
+            }
+            .taskSaving-btn-delete:active{
+                opacity: 0.7;
+                
+                
+            }

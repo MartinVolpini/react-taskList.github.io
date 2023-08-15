@@ -1,0 +1,79 @@
+:root{
+    --color_white: #f8f8f8;
+    --color_black: #333333;
+    --color_gray:  #ddd;  
+    --color_darck_blue: #0c223a;  
+    --color_darck_blue_opacity: #0c223aa7;  
+    --color_light_blue:#057aa2;
+    --color_green: #0f9b72;
+    --color_light_green: #7acaac;
+    --color_yellow : #fff333;
+}
+
+.lg-content{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+    background: linear-gradient(to right , #7acaac , #057aa2) 
+}
+
+.lg-form{
+    display: flex; flex-flow: column nowrap; 
+    justify-content: space-evenly; 
+    align-content: center;
+    height: 50rem; width: 35rem; padding: 1rem 3rem; border-radius: 4px;
+    border: none;
+    background-color: 
+    var( --color_darck_blue_opacity ) ;
+    background: linear-gradient(to right , #3d4043a7 , var( --color_darck_blue_opacity ) ) 
+    /* rgba(64, 95, 64, 0.447); */
+}
+
+    .lg-form--row1{
+        display: flex; flex-direction: column; 
+        align-items: center; 
+        
+        justify-content: flex-end!important;
+        margin: 0%; padding: 0%;
+    }
+    .lg-title { 
+        font-size: 3.5rem;
+        letter-spacing: 0.9px;
+        color: var(--color_white);
+    }
+
+    .lg-form--row2{
+        display: flex; flex-direction: column; 
+        align-items: center; 
+        
+        justify-content: space-between!important;
+        margin: 0%; padding: 0px
+    }
+
+        .lg-form--row2--item {
+            justify-self: center;
+            /* align-self: center; */
+            height: 3.8rem; width: 100%; padding: 0px 10px;
+            margin: 15px 0px;
+            border: none;
+            font-size: 18px; 
+            letter-spacing: 0.9px;
+        }
+        .lg-form--row2--item::placeholder { 
+            padding-left: 5px;
+            
+        }
+
+.lg-btns {
+    justify-self: center;
+    /* align-self: flex-end; */
+    height: 3.8rem; border: none; border-radius: 10px;
+
+    font-size: 18px; 
+    font-weight: bold; 
+    letter-spacing: 0.9px;
+    background-color: var(--color_green);
+    color: var( --color_white );
+}
+.lg-btns:hover{ opacity: 0.7; }
